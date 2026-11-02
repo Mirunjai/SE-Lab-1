@@ -1,6 +1,6 @@
 # Reusable Jira Lab 2 Manual
 
-A step-by-step guide for converting **any student's Lab 1 scenario** into a Jira Agile backlog and one-week sprint.
+A step-by-step guide for converting **any student's Lab 1 scenario** into a Jira Agile backlog and two one-week sprints.
 
 ## 1. Gather your Lab 1 source material
 
@@ -116,7 +116,8 @@ The handout specifies a one-week Sprint. Select only a realistic subset based on
 5. Open Active Sprints. Selected Stories should appear in To Do.
 6. Simulate progress by moving each selected Story through **To Do -> In Progress -> Done**. The handout says to wait a few minutes between stages.
 7. Mark an issue Done only after the simulation/acceptance is complete. Do not change unrelated backlog issues.
-8. Complete the sprint if required by your instructor.
+8. Click Complete sprint to end Sprint 1. The Lab 2 handout explicitly says to finish two sprints.
+9. Create Sprint 2, choose the next coherent group of prioritised Stories, set a one-week duration and Sprint Goal, start it, simulate To Do -> In Progress -> Done, then complete it. Do not force all remaining backlog work into Sprint 2 if it exceeds realistic capacity.
 
 ## 10. View the Burndown Chart
 
@@ -124,8 +125,9 @@ The handout specifies a one-week Sprint. Select only a realistic subset based on
 2. Choose Burndown Chart.
 3. Confirm it is the intended Sprint 1; select Story Points as the estimation statistic if available.
 4. The remaining-work line shows work left; the guideline shows approximate linear progress.
-5. Observe flat periods, sharp drops, scope changes or early/late completion.
-6. Capture a screenshot showing the chart and sprint timeline.
+5. The red line represents remaining estimated work; the grey guideline approximates linear progress. A red line below the guideline means the team is ahead of that guideline; above it may mean the team is behind.
+6. Observe flat periods, sharp drops, scope changes or early/late completion. A sharp drop can indicate late completion or that work was not broken down/estimated well.
+7. Review the chart for the completed sprint(s) and capture genuine Jira screenshots showing the chart and sprint timeline.
 
 **Evidence must be real.** Do not submit an illustrative chart as Jira evidence. Use the report from the sprint you actually ran.
 
@@ -145,7 +147,7 @@ Use ticket names, points and observations from your Jira board. Do not make clai
 - [ ] Backlog screenshot showing Epics and their Stories.
 - [ ] Story Point / priority evidence.
 - [ ] Active Sprint screenshot with To Do, In Progress and Done columns.
-- [ ] Burndown Chart screenshot from Jira Reports.
+- [ ] Burndown Chart screenshot(s) from Jira Reports after the sprint run(s).
 - [ ] Brief reflection document answering all four questions.
 - [ ] Organise the evidence under LAB 2 in the course repository, if required by your instructor.
 - [ ] Demonstrate the Jira workspace to the instructor (the handout explicitly requires this).
