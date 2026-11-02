@@ -108,6 +108,16 @@ Points are proposed starting estimates on the handout's scale. They must be vali
 - Reason: all three are High priority and form one dependent workflow. US-01 establishes expiry-date data required by US-02 and US-03.
 - Remaining Stories stay in the backlog for later sprint planning.
 
+## Proposed Sprint 2 - Replenishment and Supplier Orders
+
+- Duration: one week; choose dates after confirming the class schedule.
+- Goal: create a draft purchase order below the minimum threshold, dispatch the supplier request securely and make dispatched orders visible to suppliers.
+- Selected Stories: US-04 (5) + US-05 (8) + US-06 (3) = **16 points**.
+- Dependency order: US-04 -> US-05 -> US-06.
+- Capacity caveat: 16 points is a proposal, not a known team velocity. If it exceeds the team capacity, move US-06 or another Story to a later sprint. US-07 can remain in the backlog.
+
+The Lab 2 handout explicitly instructs students to finish **two sprints**. Complete Sprint 1 and Sprint 2, and capture genuine Jira Burndown Chart evidence.
+
 ## After Jira setup
 
 Create the three Epics first, then the seven Stories; link each Story to its Epic; enter priorities and agreed Story Points; create Sprint 1 for one week; add US-01, US-02 and US-03; start the sprint; simulate To Do -> In Progress -> Done; and capture the actual Burndown Chart from Jira Reports.
