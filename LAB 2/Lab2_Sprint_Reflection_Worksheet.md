@@ -5,11 +5,18 @@ Complete this after your actual Jira Sprint simulation and Burndown Chart review
 ## Project details
 
 - Jira project / key: [enter]
-- Sprint name / dates: [enter]
+- Sprint names / dates: Sprint 1 [enter] and Sprint 2 [enter]
 - Sprint goal: [enter]
-- Planned Story Points: [enter]
-- Completed Story Points: [enter]
+- Sprint 1 planned / completed Story Points: [enter]
+- Sprint 2 planned / completed Story Points: [enter]
 - Burndown screenshot path: [enter]
+
+## Evidence to attach
+
+- Jira backlog with Epics and Stories
+- Story Point assignments
+- Active Sprint view(s)
+- Burndown Chart screenshot(s)
 
 ## Reflection questions
 
