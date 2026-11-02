@@ -35,8 +35,8 @@ def on_obstacle_passed(obstacle, score):
 
 
 def max_jumps():
-    """Return how many jumps the dino gets before it must land again (2 for a double jump), or None for the default of 1."""
-    pass
+    """Allow one extra mid-air jump before the dino must land again."""
+    return 2
 
 
 def load_high_score():
