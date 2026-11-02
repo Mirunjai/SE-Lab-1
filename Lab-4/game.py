@@ -9,6 +9,12 @@ GROUND_COLOR = (80, 80, 80)
 GRAVITY, JUMP_FORCE = 0.6, -14
 HIGH_SCORE_FILE = "dino_highscore.txt"
 
+# Clear-streak feedback shared with the draw loop.
+COMBO_COUNT = 0
+COMBO_POPUP_FRAMES = 0
+LAST_CLEARED_SCORE = 0
+COMBO_POPUP_DURATION = 45
+
 
 def dino_tint(on_ground):
     """Return the grounded green or airborne blue colour for the dino."""
@@ -18,8 +24,14 @@ def dino_tint(on_ground):
 
 
 def on_obstacle_passed(obstacle, score):
-    """Called once, the frame an obstacle finishes scrolling past the dino. Add a sound or a combo counter here."""
-    pass
+    """Count a successfully cleared obstacle and trigger a brief on-screen notification."""
+    global COMBO_COUNT, COMBO_POPUP_FRAMES, LAST_CLEARED_SCORE
+
+    LAST_CLEARED_SCORE = score
+    COMBO_COUNT += 1
+    COMBO_POPUP_FRAMES = COMBO_POPUP_DURATION
+    obstacle.passed = True
+    return COMBO_COUNT
 
 
 def max_jumps():
@@ -104,6 +116,11 @@ class Game:
         self.reset()
 
     def reset(self):
+        global COMBO_COUNT, COMBO_POPUP_FRAMES, LAST_CLEARED_SCORE
+
+        COMBO_COUNT = 0
+        COMBO_POPUP_FRAMES = 0
+        LAST_CLEARED_SCORE = 0
         self.dino = Dino(80, GROUND_Y)
         self.obstacles = []
         self.score = 0
@@ -121,8 +138,12 @@ class Game:
         self.dino.jump()
 
     def update(self):
+        global COMBO_POPUP_FRAMES
+
         if self.state != "play":
             return
+        if COMBO_POPUP_FRAMES > 0:
+            COMBO_POPUP_FRAMES -= 1
         self.dino.update(GROUND_Y)
         self.spawn_timer += 1
         if self.spawn_timer >= self.spawn_interval:
@@ -161,6 +182,15 @@ class Game:
 
         score_surf = self.font.render(f"Score: {self.score // 10}   Best: {self.high_score}", True, (50, 50, 50))
         screen.blit(score_surf, (WIDTH - 260, 20))
+
+        if COMBO_COUNT:
+            combo_surf = self.font.render(f"Cleared: {COMBO_COUNT}", True, (45, 100, 150))
+            screen.blit(combo_surf, (20, 20))
+        if COMBO_POPUP_FRAMES:
+            popup_surf = self.font.render(
+                f"+1 obstacle! Score: {LAST_CLEARED_SCORE}", True, (45, 130, 75)
+            )
+            screen.blit(popup_surf, (20, 52))
 
         if self.state == "wait":
             msg = self.big_font.render("Press SPACE to Start", True, (80, 80, 80))
