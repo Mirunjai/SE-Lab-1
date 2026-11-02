@@ -11,6 +11,6 @@ This folder contains the pharmacy-system backlog prepared from the Lab 1 require
 
 ## Jira execution status
 
-The backlog and written materials are prepared. The connected Jira workspace currently has an existing Scrum project for a different application (Personalized News Emailer) and a generic Kanban project. Neither is an appropriate target for this pharmacy Lab 2, so no unrelated Jira project was modified. Create a dedicated company-managed Scrum project for this scenario, enter the issues, run the one-week sprint simulation and add genuine screenshots of the backlog, Story Points, Active Sprint and Burndown Chart before final submission.
+The backlog and written materials are prepared. The connected Jira workspace currently has an existing Scrum project for a different application (Personalized News Emailer) and a generic Kanban project. Neither is an appropriate target for this pharmacy Lab 2, so no unrelated Jira project was modified. Create a dedicated company-managed Scrum project for this scenario, enter the issues, run the two one-week sprint simulations and add genuine screenshots of the backlog, Story Points, Active Sprint and Burndown Chart before final submission.
 
-**Important:** Story Point values are proposed starting estimates pending Planning Poker. The sprint plan is proposed, not a record of a completed sprint. Reflection answers and Jira evidence must be completed after the actual simulation.
+**Important:** Story Point values are proposed starting estimates pending Planning Poker. The Sprint 1 and Sprint 2 plans are proposals, not records of completed sprints. The Lab 2 handout explicitly requires finishing two sprints. Reflection answers and Jira evidence must be completed after the actual simulation.
