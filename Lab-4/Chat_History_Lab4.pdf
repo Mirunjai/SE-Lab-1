@@ -1,0 +1,106 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 3629 >>
+stream
+BT
+/F1 9 Tf
+45 800 Td
+12 TL
+(LAB 4 - CHAT HISTORY) Tj T*
+(Vibe Coding: Dino Run repair and feature implementation) Tj T*
+(Assigned source: SETAPESU26/36_dinoRun) Tj T*
+(Personal lab repository: Mirunjai/SE-Lab-1) Tj T*
+(Work date: 2 November 2026) Tj T*
+() Tj T*
+(1. CONVERSATION RECORD) Tj T*
+(User requested Lab 4 work in a Lab 4 folder in the personal repository, with:) Tj T*
+(- Before and after gameplay videos) Tj T*
+(- Updated code) Tj T*
+(- Exported AI chat history in DOC or PDF) Tj T*
+(User supplied the assigned repository URL.) Tj T*
+(Assistant inspected the assigned repository README and game.py.) Tj T*
+(The README describes one deliberate bug and three unfinished functions.) Tj T*
+(The README tasks were followed in their stated order.) Tj T*
+() Tj T*
+(2. TASK-BY-TASK IMPLEMENTATION PROMPTS) Tj T*
+(Task 1 - High-score bug) Tj T*
+(Correct the comparison in Game.update so the current run replaces the) Tj T*
+(saved best only when the current score is greater than the stored best.) Tj T*
+() Tj T*
+(Task 2 - Dino tint) Tj T*
+(Implement dino_tint\(on_ground\) with a distinct colour for the grounded) Tj T*
+(and airborne states.) Tj T*
+() Tj T*
+(Task 3 - Obstacle pass feedback) Tj T*
+(Implement on_obstacle_passed\(obstacle, score\) so a successful obstacle) Tj T*
+(clear is counted once and produces visible feedback.) Tj T*
+() Tj T*
+(Task 4 - Double jump) Tj T*
+(Implement max_jumps\(\) to permit two jumps before the dino lands again.) Tj T*
+() Tj T*
+(3. IMPLEMENTATION SUMMARY) Tj T*
+(- High score: comparison changed to current > self.high_score.) Tj T*
+(- Dino tint: green while grounded, blue while airborne.) Tj T*
+(- Obstacle pass: increments a clear counter and displays a short popup) Tj T*
+(  containing the score when the obstacle was cleared. The passed flag) Tj T*
+(  prevents duplicate counting.) Tj T*
+(- Double jump: max_jumps\(\) returns 2; landing resets jump_count.) Tj T*
+(- Added requirements.txt, test_game_features.py, README and a video guide.) Tj T*
+() Tj T*
+(4. VALIDATION AND EVIDENCE STATUS) Tj T*
+(Five dependency-free logic tests passed:) Tj T*
+(1\) High-score update and protection against lower scores) Tj T*
+(2\) Grounded and airborne tint values) Tj T*
+(3\) One-time obstacle clear counting and popup timer) Tj T*
+(4\) Two-jump limit) Tj T*
+(5\) Landing resets the jump counter) Tj T*
+() Tj T*
+(Live Pygame gameplay was not verified in this execution environment.) Tj T*
+(Pygame was not installed, and the package index was unreachable when) Tj T*
+(installation was attempted. Therefore no genuine before/after gameplay) Tj T*
+(recordings were created here. No mock footage is being presented as proof.) Tj T*
+() Tj T*
+(Two genuine 10-second videos are still required:) Tj T*
+(- before.mp4: original game showing the broken high-score behavior) Tj T*
+(- after.mp4: corrected game showing tint, double jump, clear counter,) Tj T*
+(  and a high score that updates after a better run.) Tj T*
+() Tj T*
+(VIDEO_CAPTURE_GUIDE.md contains the steps to record these on a machine) Tj T*
+(with Pygame installed. The videos must be added to the Lab-4 folder.) Tj T*
+() Tj T*
+(5. REPOSITORY AND COMMITS) Tj T*
+(Changes are being made only in the personal repository, not the) Tj T*
+(SETAPESU26 source repository. Four separate commits implement the four) Tj T*
+(README tasks, followed by a documentation/tests commit.) Tj T*
+(No pull request was opened against the assigned organization repository.) Tj T*
+() Tj T*
+(This exported record contains the user request, task prompts, implementation) Tj T*
+(summary and validation status. It does not include private internal reasoning.) Tj T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3992
+%%EOF
