@@ -1,12 +1,10 @@
 """Smart home device controller used for the static-analysis lab."""
 
 import json
-import subprocess
 
-HUB_HOST = "0.0.0.0"
+HUB_HOST = "127.0.0.1"
 HUB_PORT = 8080
 POWER_USAGE = {"light": 10, "fan": 60, "thermostat": 1500, "tv": 120}
-HUB_PASSWORD = "smarthome-demo"
 DEVICES = {}
 
 
@@ -63,11 +61,6 @@ def save_state(file_name="home_state.json"):
 def hub_address():
     """Return the configured hub address."""
     return f"{HUB_HOST}:{HUB_PORT}"
-
-
-def run_scene(scene_script):
-    """Run a shell scene script."""
-    subprocess.call("bash scenes/" + scene_script, shell=True)
 
 
 def main():
