@@ -1,0 +1,13 @@
+Lab 5 - Bandit BEFORE report note
+
+Command required by the handout:
+python -m bandit -r smart_home.py
+
+The preparation environment did not have Bandit installed and could not access PyPI, so no fabricated Bandit output is included.
+
+Security-relevant constructs present in the assigned source:
+- HUB_HOST = "0.0.0.0"
+- HUB_PASSWORD = "smarthome-demo"
+- subprocess.call(..., shell=True) with string concatenation
+
+Re-run the command above in the lab virtual environment to replace this note with raw Bandit output.

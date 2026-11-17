@@ -1,0 +1,15 @@
+Lab 5 - Pylint BEFORE report note
+
+Command required by the handout:
+python -m pylint smart_home.py
+
+The execution environment used to prepare this repository did not have Pylint installed and could not access PyPI, so a genuine Pylint console report could not be generated here without inventing output.
+
+Issues identified from the assigned source that Pylint is expected to flag include:
+- dangerous-default-value for settings={}
+- invalid-name for camelCase functions/parameters
+- missing module/function documentation
+- unspecified text encoding
+- top-level execution / maintainability concerns
+
+Re-run the command above in the lab virtual environment to replace this note with the raw tool output.

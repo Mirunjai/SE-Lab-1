@@ -1,0 +1,14 @@
+Lab 5 - Flake8 BEFORE report note
+
+Command required by the handout:
+python -m flake8 smart_home.py
+
+The preparation environment did not have Flake8 installed and could not access PyPI, so no fabricated Flake8 output is included.
+
+Visible style problems in the assigned source include:
+- E203-style whitespace before ':' in the POWER_USAGE dictionary
+- missing blank line between top-level functions
+- E261 inline comment spacing
+- non-PEP-8 naming (also covered by Pylint)
+
+Re-run the command above in the lab virtual environment to replace this note with raw Flake8 output.
