@@ -1,0 +1,16 @@
+Lab 5 - Pylint AFTER verification note
+
+Final code-quality fixes include:
+- mutable default removed
+- snake_case identifiers used
+- module and function docstrings added
+- explicit UTF-8 file encoding used
+- import-safe main guard added
+- missing-device handling improved
+
+The preparation environment could not install Pylint from PyPI, so no numerical score is fabricated here.
+
+To generate the required raw report in the lab environment:
+python -m pylint smart_home.py > reports/after/pylint_report.txt
+
+Target from the handout: Pylint score above 9.5.

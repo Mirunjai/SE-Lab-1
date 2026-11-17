@@ -1,0 +1,11 @@
+Lab 5 - Bandit AFTER verification note
+
+Final security fixes include:
+- removed hard-coded HUB_PASSWORD
+- changed HUB_HOST from 0.0.0.0 to 127.0.0.1
+- removed subprocess import and the shell=True scene helper
+
+The preparation environment could not install Bandit from PyPI, so no fabricated Bandit findings are included.
+
+To generate the required raw report in the lab environment:
+python -m bandit -r smart_home.py > reports/after/bandit_report.txt

@@ -1,0 +1,13 @@
+Lab 5 - Flake8 AFTER verification note
+
+Final style cleanup includes:
+- PEP 8 spacing
+- correct blank lines between top-level functions
+- snake_case identifiers
+- no inline-comment spacing issue
+- long expression in main split into a separate devices_on assignment
+
+The preparation environment could not install Flake8 from PyPI, so no fabricated Flake8 output is included.
+
+To generate the required raw report in the lab environment:
+python -m flake8 smart_home.py > reports/after/flake8_report.txt

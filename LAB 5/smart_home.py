@@ -78,7 +78,8 @@ def main():
     print("Current power use (W):", power_usage())
     print("Hub address:", hub_address())
     print("Light settings:", DEVICES["Ceiling Light"]["settings"])
-    print("Devices on:", [name for name, info in DEVICES.items() if info["on"]])
+    devices_on = [name for name, info in DEVICES.items() if info["on"]]
+    print("Devices on:", devices_on)
     save_state()
 
 
